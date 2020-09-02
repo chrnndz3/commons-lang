@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-lang3 >------------------
+[INFO] Building Apache Commons Lang 3.12-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> testrunner-maven-plugin:1.0:testplugin (default-cli) > test-compile @ commons-lang3 >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-3) @ commons-lang3 ---
+[INFO] 
+[INFO] --- apache-rat-plugin:0.13:check (rat-check) @ commons-lang3 ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:parse-version (parse-version) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.8:run (javadoc.resources) @ commons-lang3 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.7.0:process (process-resource-bundles) @ commons-lang3 ---
+[INFO] Skipping remote resources execution.
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ commons-lang3 ---
+[INFO] Executing: /bin/sh -c cd '/home/chrnndz3/github/chrnndz3/commons-lang' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /home/chrnndz3/github/chrnndz3/commons-lang
+[INFO] Storing buildNumber: 649dedbbe8b6ab61fb3c4792c86b7e0af7ec4a73 at timestamp: 1599020818760
+[INFO] Storing buildScmBranch: master
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/chrnndz3/github/chrnndz3/commons-lang/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 210 source files to /home/chrnndz3/github/chrnndz3/commons-lang/target/classes
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: Some input files use or override a deprecated API.
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/main/java/org/apache/commons/lang3/function/FailableObjIntConsumer.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/main/java/org/apache/commons/lang3/function/FailableObjIntConsumer.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-bundle-plugin:5.1.1:manifest (bundle-manifest) @ commons-lang3 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ commons-lang3 ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ commons-lang3 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 182 source files to /home/chrnndz3/github/chrnndz3/commons-lang/target/test-classes
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/test/java/org/apache/commons/lang3/StreamsTest.java: Some input files use or override a deprecated API.
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/test/java/org/apache/commons/lang3/StreamsTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/test/java/org/apache/commons/lang3/builder/DiffResultTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/chrnndz3/github/chrnndz3/commons-lang/src/test/java/org/apache/commons/lang3/builder/DiffResultTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< testrunner-maven-plugin:1.0:testplugin (default-cli) < test-compile @ commons-lang3 <<<
+[INFO] 
+[INFO] 
+[INFO] --- testrunner-maven-plugin:1.0:testplugin (default-cli) @ commons-lang3 ---
+[INFO] No timeout specified. Using randomize.rounds: 10
+[INFO] ROUNDS_CALCULATED: Giving org.apache.commons:commons-lang3:3.12-SNAPSHOT 10 rounds to run for random-class-method
+[INFO] Module is not using a supported test framework (probably not JUnit).
+---------------------------------------------------
+ERROR (WRITE_ERROR_STDOUT_STRING): org.apache.commons:commons-lang3:3.12-SNAPSHOT
+Message was:
+Module is not using a supported test framework (probably not JUnit).
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.200 s
+[INFO] Finished at: 2020-09-01T23:27:15-05:00
+[INFO] ------------------------------------------------------------------------
